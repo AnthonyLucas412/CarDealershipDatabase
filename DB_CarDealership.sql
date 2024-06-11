@@ -30,6 +30,14 @@ VIN int PRIMARY KEY
 );
 
 create table sales_contracts(
+sales_contract_id int auto_increment primary key,
+VIN varchar(50) primary key,
+foreign key (VIN) references VIN (vehicles),
+salestax int,
+monthlypayment int,
+finance boolean
+);
+
 
 
 
